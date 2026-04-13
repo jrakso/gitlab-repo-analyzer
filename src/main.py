@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 from gitlab_client import GitlabClient
 from repo_cloner import RepoCloner
-from pydriller import Repository
+from repo_analyzer import RepoAnalyzer
 
 load_dotenv()
 
@@ -22,3 +22,14 @@ OUTPUT_DIR = "repos"
 
 cloner = RepoCloner()
 cloner.clone_repos(projects, OUTPUT_DIR)
+
+analyzer = RepoAnalyzer()
+for repo_name in os.listdir(OUTPUT_DIR):
+    repo_path = os.path.join(OUTPUT_DIR, repo_name)
+
+    if not os.path.isdir(repo_path):
+        continue
+
+    result = analyzer.analyze_repo(repo_path)
+    print(f"\n=== {repo_name} ===")
+    print(result)

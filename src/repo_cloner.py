@@ -3,7 +3,7 @@ from git import Repo
 
 
 class RepoCloner:
-    def clone_repos(self, projects: list[dict], output_dir: str):
+    def clone_repos(self, projects: list[dict], output_dir: str) -> None:
         os.makedirs(output_dir, exist_ok=True)
 
         for project in projects:

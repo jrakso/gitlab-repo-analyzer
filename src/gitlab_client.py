@@ -4,12 +4,12 @@ GITLAB_API = "https://gitlab.lnu.se/api/v4"
 
 
 class GitlabClient:
-    def __init__(self, token: str):
+    def __init__(self, token: str) -> None:
         self.headers = {
             "PRIVATE-TOKEN": token
         }
 
-    def get_group_projects(self, group_id: str):
+    def get_group_projects(self, group_id: str) -> list[dict]:
         url = f"{GITLAB_API}/groups/{group_id}/projects"
 
         response = requests.get(url, headers=self.headers)
