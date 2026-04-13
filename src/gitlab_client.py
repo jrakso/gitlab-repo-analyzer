@@ -3,7 +3,7 @@ import requests
 GITLAB_API = "https://gitlab.lnu.se/api/v4"
 
 
-class GitLabClient:
+class GitlabClient:
     def __init__(self, token: str):
         self.headers = {
             "PRIVATE-TOKEN": token
