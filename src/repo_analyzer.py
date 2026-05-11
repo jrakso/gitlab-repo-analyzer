@@ -1,100 +1,82 @@
-from git import Repo
-from pydriller import Repository
+from git import Repo, Commit
+from branch import Branch
+from typing import Any
 
 
 class RepoAnalyzer:
-    def analyze_repo(self, repo_path: str) -> dict:
+
+    def analyze_repo(self, repo_path: str) -> dict[str, Any]:
         repo = Repo(repo_path)
 
-        branches = self.get_branch_names(repo)
+        branch_names = self.get_branch_names(repo)
+        default_branch_name = self.get_default_branch_name(repo)
 
-        total_commits = self.get_total_commits(repo_path)
-        merge_commits = self.get_merge_commits(repo_path)
+        branches = self.create_branch_objects(branch_names, default_branch_name)
 
-        branch_commit_counts = self.get_commits_per_branch(repo, branches)
+        self.build_branches(repo, branches, default_branch_name)
+
+        total_commits = self.get_all_commits(repo, branches)
+
+        total_merge_commits = self.get_all_merge_commits(repo, branches)
 
         return {
-            "count": self.get_branch_count(branches),
-            "names": branches,
-            "is_single_branch": self.is_single_branch(branches),
-            "has_branching_activity": self.has_branching_activity(
-                branches,
-                merge_commits
-            ),
-            "strategy": self.get_branching_strategy(
-                branches,
-                merge_commits
-            ),
-            "total_commits": total_commits,
-            "merge_commits": merge_commits,
-            "merge_ratio": self.get_merge_ratio(
-                merge_commits,
-                total_commits
-            ),
-            "commits_per_branch": branch_commit_counts,
-            "avg_commits_per_branch": self.get_avg_commits_per_branch(
-                branch_commit_counts
-            )
+            "total_commits": len(total_commits),
+            "total_merge_commits": len(total_merge_commits),
+            "total_branches": len(branches),
+            "default_branch": default_branch_name,
+            "branches": [
+                [name, branch.to_dict()]
+                for name, branch in branches.items()
+            ]
         }
 
     def get_branch_names(self, repo: Repo) -> list[str]:
         return [branch.name for branch in repo.branches]
 
-    def get_branch_count(self, branches: list[str]) -> int:
-        return len(branches)
+    def get_default_branch_name(self, repo: Repo) -> str:
+        return repo.active_branch.name
 
-    def is_single_branch(self, branches: list[str]) -> bool:
-        return len(branches) == 1
+    def create_branch_objects(self, branch_names: list[str], default_branch_name: str) -> dict[str, Branch]:
+        branches = {}
+        for branch_name in branch_names:
+            branches[branch_name] = Branch(branch_name, branch_name == default_branch_name)
+        return branches
 
-    def has_branching_activity(self, branches: list[str], merge_commits: int) -> bool:
-        return len(branches) > 1 or merge_commits > 0
+    def populate_mainline_commits(self, repo: Repo, branch: Branch) -> None:
+        branch.branch_tip = repo.commit(branch.name)
+        for commit in repo.iter_commits(branch.name, first_parent=True):
+            branch.commits[commit.hexsha] = commit
 
-    def get_branching_strategy(self, branches: list[str], merge_commits: int) -> str:
-        if len(branches) == 1 and merge_commits == 0:
-            return "no_branching"
-        if len(branches) > 1:
-            return "multi_branch"
-        if merge_commits > 0:
-            return "merged_branches"
-        return "unknown"
+    def populate_branch_commits(self, repo: Repo, branch: Branch, mainline: Branch) -> None:
+        branch.branch_tip = repo.commit(branch.name)
+        for commit in repo.iter_commits(branch.name, first_parent=True):
+            if commit.hexsha in mainline.commits:
+                branch.merge_base = commit
+                break
+            branch.commits[commit.hexsha] = commit
 
-    def get_total_commits(self, repo_path: str) -> int:
-        total_commits = 0
-        for _ in Repository(repo_path).traverse_commits():
-            total_commits += 1
-        return total_commits
+    def build_branches(self, repo: Repo, branches: dict[str, Branch], default_branch_name: str) -> None:
+        default_branch = branches[default_branch_name]
 
-    def get_merge_commits(self, repo_path: str) -> int:
-        merge_commits = 0
-        for commit in Repository(repo_path).traverse_commits():
-            # Merge commit has multiple parents
-            if len(commit.parents) > 1:
-                merge_commits += 1
+        # Populate Branch objects with commits.
+        # We populate mainline first since populate_branch_commits
+        # uses mainline commits as merge base
+        self.populate_mainline_commits(repo, default_branch)
+        for branch in branches.values():
+            if not branch.is_default_branch:
+                self.populate_branch_commits(repo, branch, default_branch)
+            branch.populate_metrics()
+
+    def get_all_commits(self, repo: Repo, branches: dict[str, Branch]) -> dict[str, Commit]:
+        commits = {}
+        for branch in branches.values():
+            for hexsha, commit in branch.commits.items():
+                commits[hexsha] = commit
+        return commits
+
+    def get_all_merge_commits(self, repo: Repo, branches: dict[str, Branch]) -> dict[str, Commit]:
+        merge_commits = {}
+        for branch in branches.values():
+            for hexsha, merge_commit in branch.merge_commits.items():
+                merge_commits[hexsha] = merge_commit
         return merge_commits
-
-    def get_merge_ratio(self, merge_commits: int, total_commits: int) -> float:
-        if total_commits == 0:
-            return 0
-        return merge_commits / total_commits
-
-    def get_commits_per_branch(self, repo: Repo, branches: list[str]) -> dict:
-        branch_commit_counts = {}
-        for branch in branches:
-            commits = list(repo.iter_commits(branch))
-            branch_commit_counts[branch] = len(commits)
-        return branch_commit_counts
-
-    def get_avg_commits_per_branch(self, branch_commit_counts: dict) -> float:
-        if len(branch_commit_counts) == 0:
-            return 0
-        total = sum(branch_commit_counts.values())
-        return total / len(branch_commit_counts)
-
-    def get_contributors_per_branch(self, repo: Repo, branches: list[str]) -> dict:
-        contributors_per_branch = {}
-        for branch in branches:
-            contributors = set()
-            for commit in repo.iter_commits(branch):
-                contributors.add(commit.author.name)
-            contributors_per_branch[branch] = list(contributors)
-        return contributors_per_branch

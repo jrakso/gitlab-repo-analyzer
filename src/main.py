@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 from gitlab_client import GitlabClient
 from repo_cloner import RepoCloner
 from repo_analyzer import RepoAnalyzer
+import json
 
 load_dotenv()
 
@@ -32,4 +33,4 @@ for repo_name in os.listdir(OUTPUT_DIR):
 
     result = analyzer.analyze_repo(repo_path)
     print(f"\n=== {repo_name} ===")
-    print(result)
+    print(json.dumps(result, indent=2))
