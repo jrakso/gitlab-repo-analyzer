@@ -66,6 +66,7 @@ class RepoAnalyzer:
             if not branch.is_default_branch:
                 self.populate_branch_commits(repo, branch, default_branch)
             branch.populate_metrics()
+            branch.work_ratio = branch.commit_count / len(self.get_all_commits(repo, branches))
 
     def get_all_commits(self, repo: Repo, branches: dict[str, Branch]) -> dict[str, Commit]:
         commits = {}

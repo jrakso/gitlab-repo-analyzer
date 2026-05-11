@@ -25,12 +25,13 @@ OUTPUT_DIR = "repos"
 # cloner.clone_repos(projects, OUTPUT_DIR)
 
 analyzer = RepoAnalyzer()
+results = {}
 for repo_name in os.listdir(OUTPUT_DIR):
     repo_path = os.path.join(OUTPUT_DIR, repo_name)
 
     if not os.path.isdir(repo_path):
         continue
 
-    result = analyzer.analyze_repo(repo_path)
-    print(f"\n=== {repo_name} ===")
-    print(json.dumps(result, indent=2))
+    results[repo_name] = analyzer.analyze_repo(repo_path)
+
+print(json.dumps(results, indent=2))

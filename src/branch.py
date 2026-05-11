@@ -15,6 +15,7 @@ class Branch:
     first_commit_time: Any  # datetime.datetime
     last_commit_time: Any   # datetime.datetime
     lifetime: Any
+    work_ratio: float
 
     def __init__(self, branch_name: str, is_default_branch: bool = False) -> None:
         self.name = branch_name
@@ -29,6 +30,7 @@ class Branch:
         self.first_commit_time = None
         self.last_commit_time = None
         self.lifetime = None
+        self.work_ratio = 0
 
     def populate_metrics(self) -> None:
         self.populate_contributors()
@@ -69,5 +71,6 @@ class Branch:
             "contributors": list(self.contributors),
             "first_commit_time": self.first_commit_time.isoformat() if self.first_commit_time else None,
             "last_commit_time": self.last_commit_time.isoformat() if self.last_commit_time else None,
-            "lifetime": str(self.lifetime) if self.lifetime is not None else None
+            "lifetime": str(self.lifetime) if self.lifetime is not None else None,
+            "work_ratio": self.work_ratio
         }
