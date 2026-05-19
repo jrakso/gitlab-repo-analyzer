@@ -4,13 +4,15 @@ from datetime import datetime
 class CommitNode:
     hexsha: str
     message: str
+    author_email: str
     parents: dict[str, CommitNode]
     children: dict[str, CommitNode]
     is_merge_commit: bool
 
-    def __init__(self, hexsha: str, message: str, created_at: datetime) -> None:
+    def __init__(self, hexsha: str, message: str, author_email: str, created_at: datetime) -> None:
         self.hexsha = hexsha
         self.message = message
+        self.author_email = author_email
         self.created_at = created_at
         self.parents = {}
         self.children = {}

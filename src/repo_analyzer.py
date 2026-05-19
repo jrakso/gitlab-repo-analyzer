@@ -5,6 +5,8 @@ from branch import Branch
 from contributor import Contributor
 import os
 
+UNKNOWN = "unknown"
+
 
 class RepoAnalyzer:
 
@@ -38,7 +40,11 @@ class RepoAnalyzer:
         # Create nodes
         for commit in repo.iter_commits("--all"):
             if commit.hexsha not in nodes:
-                nodes[commit.hexsha] = CommitNode(commit.hexsha, str(commit.message.strip()), commit.committed_datetime)
+                nodes[commit.hexsha] = CommitNode(
+                    commit.hexsha, str(commit.message.strip()),
+                    commit.author.email or UNKNOWN,
+                    commit.committed_datetime
+                )
         # Connect parents
         for commit in repo.iter_commits("--all"):
             node = nodes[commit.hexsha]
@@ -50,8 +56,8 @@ class RepoAnalyzer:
     def create_contributors(self, repo: Repo, nodes: dict[str, CommitNode]) -> dict[str, Contributor]:
         contributors = {}
         for commit in repo.iter_commits("--all"):
-            email = commit.author.email or "unknown"
-            name = commit.author.name or "unknown"
+            email = commit.author.email or UNKNOWN
+            name = commit.author.name or UNKNOWN
             if email not in contributors:
                 contributors[email] = Contributor(email, name)
             contributors[email].add_commit(nodes[commit.hexsha])
@@ -115,13 +121,19 @@ class RepoAnalyzer:
                 best_parent = candidates[0][3]
                 branch.parent_branch = best_parent
 
-    def populate_branches(self, repo: Repo, branches: dict[str, Branch], commits: dict[str, CommitNode]) -> None:
+    def populate_branches(self,
+                          repo: Repo,
+                          branches: dict[str, Branch],
+                          commits: dict[str, CommitNode],
+                          contributors: dict[str, Contributor]) -> None:
+
         for branch in branches.values():
 
             # Mainline
             if branch.parent_branch is None:
                 for commit in repo.iter_commits(branch.name, first_parent=True):
                     branch.add_commit(commits[commit.hexsha])
+                    branch.add_contributor(contributors[commits[commit.hexsha].author_email])
 
             # Feature branches
             else:
@@ -133,6 +145,7 @@ class RepoAnalyzer:
                 for commit in repo.iter_commits(branch.name, first_parent=True):
                     if commit.hexsha not in parent_first_parent_commits:
                         branch.add_commit(commits[commit.hexsha])
+                        branch.add_contributor(contributors[commits[commit.hexsha].author_email])
 
 
 analyzer = RepoAnalyzer()
