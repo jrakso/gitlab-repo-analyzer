@@ -1,9 +1,10 @@
-from git import Repo
 from typing import Any
+from git import Repo
 from commit import CommitNode
 from branch import Branch
 from contributor import Contributor
 import os
+import json
 
 UNKNOWN = "unknown"
 
@@ -15,24 +16,20 @@ class RepoAnalyzer:
 
         commits = self.create_commit_nodes(repo)
         contributors = self.create_contributors(repo, commits)
-        for contributor in contributors.values():
-            print(len(contributor.commits))
-            print(len(contributor.merge_commits))
-            for merge_commit in contributor.merge_commits.values():
-                print(merge_commit.hexsha)
-
         branches = self.create_branches(repo, commits)
+
         self.assign_parent_branches(repo, branches)
-        self.populate_branches(repo, branches, commits)
-        for branch in branches.values():
-            parent_name = branch.parent_branch.name if branch.parent_branch is not None else "none"
-            print(f"{branch.name} -> {parent_name}")
-            for commit in branch.commits.values():
-                print(commit.message)
+        self.populate_branches(repo, branches, commits, contributors)
 
         return {
-            "branch_names": [branch.name for branch in branches.values()],
-            "contributors": [contributor.name for contributor in contributors.values()]
+            "total_commits": len(commits),
+            "total_merge_commits": sum(
+                1
+                for commit in commits.values()
+                if commit.is_merge_commit
+            ),
+            "contributors": [contributor.name for contributor in contributors.values()],
+            "branches": [branch.to_dict() for branch in branches.values()]
         }
 
     def create_commit_nodes(self, repo: Repo) -> dict[str, CommitNode]:
@@ -149,4 +146,5 @@ class RepoAnalyzer:
 
 
 analyzer = RepoAnalyzer()
-print(analyzer.analyze_repo(os.path.join("repos", "branching-test")))
+result = analyzer.analyze_repo(os.path.join("repos", "branching-test"))
+print(json.dumps(result, indent=4))

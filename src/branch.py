@@ -1,8 +1,13 @@
 from __future__ import annotations
+
+from typing import TYPE_CHECKING
+from commit import CommitNode
+
+if TYPE_CHECKING:
+    from contributor import Contributor
+
 from datetime import datetime
 from datetime import timedelta
-from commit import CommitNode
-from contributor import Contributor
 
 
 class Branch:
@@ -40,6 +45,19 @@ class Branch:
     def get_number_of_contributors(self) -> int:
         return len(self.contributors)
 
+    def get_number_of_commits_per_contributor(self, contributor: Contributor) -> int:
+        return len(contributor.get_commits_in_branch(self))
+
+    def get_number_of_merge_commits_per_contributor(self, contributor: Contributor) -> int:
+        return sum(
+            1
+            for commit in contributor.get_commits_in_branch(self).values()
+            if commit.is_merge_commit
+        )
+
+    def get_work_ratio_per_contributor(self, contributor: Contributor) -> float:
+        return self.get_number_of_commits_per_contributor(contributor) / self.get_number_of_commits()
+
     def get_start_date(self) -> datetime | None:
         if not self.commits:
             return None
@@ -59,3 +77,28 @@ class Branch:
 
     def has_been_integrated(self) -> bool:
         return bool(self.branch_tip.children)
+
+    def to_dict(self):
+        start_date = self.get_start_date()
+        end_date = self.get_end_date()
+        lifetime = self.get_lifetime()
+        return {
+            self.name: {
+                "first_activity": start_date.isoformat() if start_date is not None else None,
+                "last_activity": end_date.isoformat() if end_date is not None else None,
+                "active_lifetime_seconds": int(lifetime.total_seconds()) if lifetime is not None else None,
+                "commits": self.get_number_of_commits(),
+                "merge_commits": self.get_number_of_merge_commits(),
+                "has_been_integrated": self.has_been_integrated(),
+                "contributors": [
+                    {
+                        "name": contributor.name,
+                        "email": contributor.email,
+                        "commits": self.get_number_of_commits_per_contributor(contributor),
+                        "merge_commits": self.get_number_of_merge_commits_per_contributor(contributor),
+                        "work_ratio": self.get_work_ratio_per_contributor(contributor)
+                    }
+                    for contributor in self.contributors.values()
+                ]
+                }
+        }

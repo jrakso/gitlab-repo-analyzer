@@ -1,3 +1,10 @@
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from branch import Branch
+
 from commit import CommitNode
 
 
@@ -18,3 +25,10 @@ class Contributor:
             self.commits[commit.hexsha] = commit
             if commit.is_merge_commit:
                 self.merge_commits[commit.hexsha] = commit
+
+    def get_commits_in_branch(self, branch: Branch) -> dict[str, CommitNode]:
+        commits_in_branch = {}
+        for commit in branch.commits.values():
+            if commit.hexsha in self.commits and commit.hexsha not in commits_in_branch:
+                commits_in_branch[commit.hexsha] = commit
+        return commits_in_branch
