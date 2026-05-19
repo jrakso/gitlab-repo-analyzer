@@ -1,76 +1,43 @@
-from git import Commit
-from typing import Any
+from commit import CommitNode
+from datetime import datetime
+from datetime import timedelta
 
 
 class Branch:
     name: str
-    isDefaultBranch: bool
-    merge_base: Commit | None
-    branch_tip: Commit | None
-    commits: dict[str, Commit]
-    merge_commits: dict[str, Commit]
-    contributors: set[str]
-    commit_count: int
-    merge_commit_count: int
-    first_commit_time: Any  # datetime.datetime
-    last_commit_time: Any   # datetime.datetime
-    lifetime: Any
-    work_ratio: float
+    branch_tip: CommitNode
+    parent_branch: Branch | None
+    commits: dict[str, CommitNode]
+    merge_commits: dict[str, CommitNode]
 
-    def __init__(self, branch_name: str, is_default_branch: bool = False) -> None:
-        self.name = branch_name
-        self.is_default_branch = is_default_branch
-        self.merge_base = None
-        self.branch_tip = None
+    def __init__(self, name: str, branch_tip: CommitNode) -> None:
+        self.name = name
+        self.branch_tip = branch_tip
+        self.parent_branch = None
         self.commits = {}
         self.merge_commits = {}
-        self.contributors = set()
-        self.commit_count = 0
-        self.merge_commit_count = 0
-        self.first_commit_time = None
-        self.last_commit_time = None
-        self.lifetime = None
-        self.work_ratio = 0
 
-    def populate_metrics(self) -> None:
-        self.populate_contributors()
-        self.populate_merge_commits()
-        self.populate_commit_count()
-        self.populate_merge_commit_count()
-        self.populate_lifetime()
-
-    def populate_contributors(self) -> None:
-        for commit in self.commits.values():
-            author_name = str(commit.author.name) if commit.author and commit.author.name else "unknown"
-            self.contributors.add(author_name)
-
-    def populate_merge_commits(self) -> None:
-        for commit in self.commits.values():
-            if len(commit.parents) > 1:
+    def add_commit(self, commit: CommitNode) -> None:
+        if commit.hexsha not in self.commits:
+            self.commits[commit.hexsha] = commit
+            if commit.is_merge_commit:
                 self.merge_commits[commit.hexsha] = commit
 
-    def populate_commit_count(self) -> None:
-        self.commit_count = len(self.commits)
+    def get_number_of_commits(self) -> int:
+        return len(self.commits)
 
-    def populate_merge_commit_count(self) -> None:
-        self.merge_commit_count = len(self.merge_commits)
+    def get_number_of_merge_commits(self) -> int:
+        return len(self.merge_commits)
 
-    def populate_lifetime(self) -> None:
-        times = [commit.committed_datetime for commit in self.commits.values()]
-        if times:
-            self.first_commit_time = min(times)
-            self.last_commit_time = max(times)
-            self.lifetime = self.last_commit_time - self.first_commit_time
+    def get_start_date(self) -> datetime:
+        return min(commit.created_at for commit in self.commits.values())
 
-    def to_dict(self) -> dict[str, Any]:
-        return {
-            "name": self.name,
-            "is_default_branch": self.is_default_branch,
-            "commit_count": self.commit_count,
-            "merge_commit_count": self.merge_commit_count,
-            "contributors": list(self.contributors),
-            "first_commit_time": self.first_commit_time.isoformat() if self.first_commit_time else None,
-            "last_commit_time": self.last_commit_time.isoformat() if self.last_commit_time else None,
-            "lifetime": str(self.lifetime) if self.lifetime is not None else None,
-            "work_ratio": self.work_ratio
-        }
+    def get_end_date(self) -> datetime:
+        return max(commit.created_at for commit in self.commits.values())
+
+    def get_lifetime(self) -> timedelta:
+        return self.get_end_date() - self.get_start_date()
+
+    def has_been_integrated(self) -> bool:
+        return bool(self.branch_tip.children)
+
