@@ -2,10 +2,10 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
+from commit import CommitNode
+
 if TYPE_CHECKING:
     from branch import Branch
-
-from commit import CommitNode
 
 
 class Contributor:

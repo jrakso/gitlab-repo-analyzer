@@ -27,3 +27,12 @@ class CommitNode:
     def add_child(self, child: CommitNode) -> None:
         if child.hexsha not in self.children:
             self.children[child.hexsha] = child
+
+    def to_dict(self):
+        return {
+            "hash": self.hexsha,
+            "message": self.message,
+            "author_email": self.author_email,
+            "parents": [parent.hexsha for parent in self.parents.values()],
+            "is_merge_commit": self.is_merge_commit
+        }

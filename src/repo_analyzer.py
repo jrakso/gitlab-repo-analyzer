@@ -1,10 +1,10 @@
 from typing import Any
 from git import Repo
+import os
+import json
 from commit import CommitNode
 from branch import Branch
 from contributor import Contributor
-import os
-import json
 
 UNKNOWN = "unknown"
 
@@ -18,8 +18,8 @@ class RepoAnalyzer:
         contributors = self.create_contributors(repo, commits)
         branches = self.create_branches(repo, commits)
 
-        self.assign_parent_branches(repo, branches)
-        self.populate_branches(repo, branches, commits, contributors)
+        # self.assign_parent_branches(repo, branches)
+        # self.populate_branches(repo, branches, commits, contributors)
 
         return {
             "total_commits": len(commits),
@@ -28,8 +28,11 @@ class RepoAnalyzer:
                 for commit in commits.values()
                 if commit.is_merge_commit
             ),
-            "contributors": [contributor.name for contributor in contributors.values()],
-            "branches": [branch.to_dict() for branch in branches.values()]
+            "total_branches": len(branches),
+            # "branch_names": [branch.name for branch in branches.values()],
+            # "branches": [branch.to_dict() for branch in branches.values()],
+            "total_contributors": len(contributors),
+            # "contributors": [contributor.email for contributor in contributors.values()]
         }
 
     def create_commit_nodes(self, repo: Repo) -> dict[str, CommitNode]:
@@ -62,17 +65,15 @@ class RepoAnalyzer:
 
     def create_branches(self, repo: Repo, commit_nodes: dict[str, CommitNode]) -> dict[str, Branch]:
         branches = {}
-        for remote in repo.remotes:
-            for ref in remote.refs:
-                if ref.remote_head != "HEAD" and ref.remote_head not in branches:
-                    branch_tip = repo.commit(ref.name)
-                    branches[ref.remote_head] = Branch(ref.remote_head, commit_nodes[branch_tip.hexsha])
+        for branch in repo.branches:
+            branch_tip = repo.commit(branch.name)
+            branches[branch.name] = Branch(branch.name, commit_nodes[branch_tip.hexsha])
         return branches
 
     def assign_parent_branches(self, repo: Repo, branches: dict[str, Branch], root: str = "main") -> None:
         # Iterate over each branch
         for branch in branches.values():
-            if branch == branches[root]:
+            if branch.name == root:
                 continue
 
             # Parent branch candidates
@@ -105,7 +106,7 @@ class RepoAnalyzer:
 
                 # Root penalty (prefer main as parent if multiple parent branches equally good)
                 root_penalty = 1
-                if parent_branch == branches[root]:
+                if parent_branch.name == root:
                     root_penalty = 0
 
                 candidates.append((dist, fp_penalty, root_penalty, parent_branch))
@@ -115,7 +116,16 @@ class RepoAnalyzer:
                 # 2. If distance equal prioritize parent with no first parent penalty
                 # 3. If all else equal choose root (main)
                 candidates.sort(key=lambda item: (item[0], item[1], item[2]))
-                best_parent = candidates[0][3]
+                for i in range(len(candidates)):
+                    best_parent = candidates[i][3]
+                    if len(candidates) > 1:
+                        if best_parent.parent_branch and best_parent.parent_branch == branch:
+                            pass
+                    else:
+                        if best_parent.parent_branch:
+                            pass
+                        break
+
                 branch.parent_branch = best_parent
 
     def populate_branches(self,
@@ -145,6 +155,6 @@ class RepoAnalyzer:
                         branch.add_contributor(contributors[commits[commit.hexsha].author_email])
 
 
-analyzer = RepoAnalyzer()
-result = analyzer.analyze_repo(os.path.join("repos", "branching-test"))
-print(json.dumps(result, indent=4))
+# analyzer = RepoAnalyzer()
+# result = analyzer.analyze_repo(os.path.join("repos", "anon4"))
+# print(json.dumps(result, indent=4))

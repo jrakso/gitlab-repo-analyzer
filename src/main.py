@@ -19,22 +19,21 @@ GROUP_ID = os.getenv("GROUP_ID")
 # client = GitlabClient(TOKEN)
 # projects = client.get_group_projects(GROUP_ID)
 
-OUTPUT_DIR = "repos"
+OUTPUT_DIR = "repos/anon"
 
 # cloner = RepoCloner()
 # cloner.clone_repos(projects, OUTPUT_DIR)
 
 analyzer = RepoAnalyzer()
-# results = {}
-# for repo_name in os.listdir(OUTPUT_DIR):
-#     repo_path = os.path.join(OUTPUT_DIR, repo_name)
+results = {}
+for repo_name in os.listdir(OUTPUT_DIR):
+    repo_path = os.path.join(OUTPUT_DIR, repo_name)
 
-#     if not os.path.isdir(repo_path):
-#         continue
+    if not os.path.isdir(repo_path):
+        continue
 
-#     results[repo_name] = analyzer.analyze_repo(repo_path)
+    print(f"analyzing {repo_path}...")
+    results[repo_name] = analyzer.analyze_repo(repo_path)
 
-repo_path = os.path.join(OUTPUT_DIR, "branching-test")
-results = analyzer.analyze_repo(repo_path)
-
-print(json.dumps(results, indent=2))
+with open("results.json", "w") as f:
+    json.dump(results, f, indent=2)
