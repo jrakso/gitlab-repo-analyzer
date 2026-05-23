@@ -21,6 +21,9 @@ class RepoAnalyzer:
 
         self.populate_branches(repo, branches, commits, contributors)
 
+        for branch in branches.values():
+            print(f"-------------- {branch.name} ------------------")
+            print(f"parent: {branch.parent.name if branch.parent else "none"}")
         trees = self.create_branch_trees(branches)
         for tree in trees:
             tree.print_tree()
@@ -120,7 +123,7 @@ class RepoAnalyzer:
     def create_branch_trees(self, branches: dict[str, Branch]) -> list[BranchTree]:
         trees = []
         for branch in branches.values():
-            if not branch.children:
+            if not branch.parent:
                 tree = BranchTree(branch)
                 trees.append(tree)
         return trees
