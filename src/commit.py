@@ -1,3 +1,4 @@
+from __future__ import annotations
 from datetime import datetime
 
 
@@ -5,7 +6,7 @@ class CommitNode:
     hexsha: str
     message: str
     author_email: str
-    parents: dict[str, CommitNode]
+    parents: list[CommitNode]
     children: dict[str, CommitNode]
     is_merge_commit: bool
 
@@ -14,15 +15,17 @@ class CommitNode:
         self.message = message
         self.author_email = author_email
         self.created_at = created_at
-        self.parents = {}
+        self.parents = []
         self.children = {}
         self.is_merge_commit = False
 
     def add_parent(self, parent: CommitNode) -> None:
-        if parent.hexsha not in self.parents:
-            self.parents[parent.hexsha] = parent
-            if len(self.parents) > 1:
-                self.is_merge_commit = True
+        for p in self.parents:
+            if parent.hexsha == p.hexsha:
+                return
+        self.parents.append(parent)
+        if len(self.parents) > 1:
+            self.is_merge_commit = True
 
     def add_child(self, child: CommitNode) -> None:
         if child.hexsha not in self.children:
@@ -33,6 +36,6 @@ class CommitNode:
             "hash": self.hexsha,
             "message": self.message,
             "author_email": self.author_email,
-            "parents": [parent.hexsha for parent in self.parents.values()],
+            # "parents": [parent.hexsha for parent in self.parents.values()],
             "is_merge_commit": self.is_merge_commit
         }

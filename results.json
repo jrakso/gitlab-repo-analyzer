@@ -1,0 +1,6685 @@
+{
+  "repo_01": {
+    "total_commits": 249,
+    "total_merge_commits": 87,
+    "total_branches": 15,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 72,
+          "merge_commits": 39
+        }
+      },
+      {
+        "development": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 12,
+          "merge_commits": 0
+        }
+      },
+      {
+        "feature/branch_2": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 61,
+          "merge_commits": 32
+        }
+      },
+      {
+        "feature/branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 85,
+          "merge_commits": 56
+        }
+      },
+      {
+        "feature/branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 61,
+          "merge_commits": 32
+        }
+      },
+      {
+        "feature/branch_5": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 73,
+          "merge_commits": 45
+        }
+      },
+      {
+        "feature/branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 74,
+          "merge_commits": 40
+        }
+      },
+      {
+        "feature/branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 33,
+          "merge_commits": 0
+        }
+      },
+      {
+        "feature/branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 16
+        }
+      },
+      {
+        "feature/branch_9": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 61,
+          "merge_commits": 23
+        }
+      },
+      {
+        "hotfix/branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 78,
+          "merge_commits": 43
+        }
+      },
+      {
+        "hotfix/branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 67,
+          "merge_commits": 39
+        }
+      },
+      {
+        "hotfix/branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 71,
+          "merge_commits": 36
+        }
+      },
+      {
+        "hotfix/branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 81,
+          "merge_commits": 52
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 82,
+          "merge_commits": 45
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_02": {
+    "total_commits": 237,
+    "total_merge_commits": 60,
+    "total_branches": 50,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 58,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 74,
+          "merge_commits": 43
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 45,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 32,
+          "merge_commits": 16
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 80,
+          "merge_commits": 47
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 27,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 80,
+          "merge_commits": 46
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 26,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 37,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 47,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 68,
+          "merge_commits": 36
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 68,
+          "merge_commits": 33
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 46,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 72,
+          "merge_commits": 41
+        }
+      },
+      {
+        "branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 76,
+          "merge_commits": 44
+        }
+      },
+      {
+        "branch_25": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 67,
+          "merge_commits": 36
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 25,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_30": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 13,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_31": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 64,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_32": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 76,
+          "merge_commits": 43
+        }
+      },
+      {
+        "branch_33": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 66,
+          "merge_commits": 36
+        }
+      },
+      {
+        "branch_34": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 69,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_35": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 58,
+          "merge_commits": 31
+        }
+      },
+      {
+        "branch_36": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 22,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_37": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 55,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_38": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 64,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_39": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 48,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 23,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_40": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 73,
+          "merge_commits": 42
+        }
+      },
+      {
+        "branch_41": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 23,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_42": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 45,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_43": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 17,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_44": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 40,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_45": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 42,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_46": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 22,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_47": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 19,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_48": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 56,
+          "merge_commits": 29
+        }
+      },
+      {
+        "branch_49": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 48,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 13,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 15,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 55,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 13,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 16,
+          "merge_commits": 3
+        }
+      },
+      {
+        "feat/branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 36,
+          "merge_commits": 18
+        }
+      },
+      {
+        "feature/branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 39,
+          "merge_commits": 20
+        }
+      },
+      {
+        "fix/branch_26": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 58,
+          "merge_commits": 31
+        }
+      },
+      {
+        "fix/branch_27": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 64,
+          "merge_commits": 34
+        }
+      },
+      {
+        "fix/branch_28": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 34,
+          "merge_commits": 18
+        }
+      },
+      {
+        "fix/branch_29": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 26,
+          "merge_commits": 13
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 80,
+          "merge_commits": 48
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_03": {
+    "total_commits": 103,
+    "total_merge_commits": 43,
+    "total_branches": 41,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 10,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 26,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 28,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 30,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 30,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 32,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 32,
+          "merge_commits": 29
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 34,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 35,
+          "merge_commits": 31
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 18,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 36,
+          "merge_commits": 32
+        }
+      },
+      {
+        "branch_21": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 36,
+          "merge_commits": 33
+        }
+      },
+      {
+        "branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 6,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 9,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 5,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_25": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 23,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_26": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 24,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_27": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 16,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_28": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 3,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_29": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 13,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 20,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_30": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 16,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_31": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 14,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_32": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 17,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_34": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 9,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_35": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 7,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_36": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 17,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_37": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 9,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_38": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 23,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_39": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 11,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 21,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_40": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 23,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 5,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 25,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 24,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 25,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 31,
+          "merge_commits": 22
+        }
+      },
+      {
+        "fix/branch_33": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 22,
+          "merge_commits": 18
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 36,
+          "merge_commits": 33
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_04": {
+    "total_commits": 284,
+    "total_merge_commits": 42,
+    "total_branches": 1,
+    "branches": [
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 133,
+          "merge_commits": 20
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_05": {
+    "total_commits": 178,
+    "total_merge_commits": 72,
+    "total_branches": 54,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 6,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 49,
+          "merge_commits": 33
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 19,
+          "merge_commits": 13
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 17,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 18,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 39,
+          "merge_commits": 27
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 13,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 41,
+          "merge_commits": 27
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 27,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 31,
+          "merge_commits": 25
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 36,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 47,
+          "merge_commits": 31
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 37,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 38,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 54,
+          "merge_commits": 38
+        }
+      },
+      {
+        "branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 59,
+          "merge_commits": 38
+        }
+      },
+      {
+        "branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 12,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_25": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 15,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_26": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 47,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_27": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 70,
+          "merge_commits": 53
+        }
+      },
+      {
+        "branch_28": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 18,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_29": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 71,
+          "merge_commits": 52
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 62,
+          "merge_commits": 45
+        }
+      },
+      {
+        "branch_30": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 70,
+          "merge_commits": 52
+        }
+      },
+      {
+        "branch_31": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 60,
+          "merge_commits": 43
+        }
+      },
+      {
+        "branch_32": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 62,
+          "merge_commits": 45
+        }
+      },
+      {
+        "branch_36": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 55,
+          "merge_commits": 39
+        }
+      },
+      {
+        "branch_37": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 57,
+          "merge_commits": 40
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 15,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_46": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 72,
+          "merge_commits": 55
+        }
+      },
+      {
+        "branch_47": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 59,
+          "merge_commits": 42
+        }
+      },
+      {
+        "branch_48": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 66,
+          "merge_commits": 49
+        }
+      },
+      {
+        "branch_49": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 68,
+          "merge_commits": 51
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 20,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_50": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 67,
+          "merge_commits": 50
+        }
+      },
+      {
+        "branch_51": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 24,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_52": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 20,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_53": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 51,
+          "merge_commits": 33
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 11,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 2,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 46,
+          "merge_commits": 31
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 26,
+          "merge_commits": 20
+        }
+      },
+      {
+        "feature/branch_33": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 60,
+          "merge_commits": 39
+        }
+      },
+      {
+        "fix/branch_34": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 26,
+          "merge_commits": 21
+        }
+      },
+      {
+        "fix/branch_35": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 43,
+          "merge_commits": 29
+        }
+      },
+      {
+        "hotfix/branch_38": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 61,
+          "merge_commits": 42
+        }
+      },
+      {
+        "hotfix/branch_39": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 59,
+          "merge_commits": 42
+        }
+      },
+      {
+        "hotfix/branch_40": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 54,
+          "merge_commits": 37
+        }
+      },
+      {
+        "hotfix/branch_41": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 55,
+          "merge_commits": 33
+        }
+      },
+      {
+        "hotfix/branch_42": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 52,
+          "merge_commits": 33
+        }
+      },
+      {
+        "hotfix/branch_43": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 65,
+          "merge_commits": 49
+        }
+      },
+      {
+        "hotfix/branch_44": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 50,
+          "merge_commits": 33
+        }
+      },
+      {
+        "hotfix/branch_45": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 51,
+          "merge_commits": 33
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 72,
+          "merge_commits": 56
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_06": {
+    "total_commits": 134,
+    "total_merge_commits": 44,
+    "total_branches": 28,
+    "branches": [
+      {
+        "branch_27": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 8,
+          "merge_commits": 0
+        }
+      },
+      {
+        "feature/branch_1": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 9,
+          "merge_commits": 1
+        }
+      },
+      {
+        "feature/branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 12
+        }
+      },
+      {
+        "feature/branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 56,
+          "merge_commits": 30
+        }
+      },
+      {
+        "feature/branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 13
+        }
+      },
+      {
+        "feature/branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 52,
+          "merge_commits": 27
+        }
+      },
+      {
+        "feature/branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 26,
+          "merge_commits": 1
+        }
+      },
+      {
+        "feature/branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 39,
+          "merge_commits": 17
+        }
+      },
+      {
+        "feature/branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 37,
+          "merge_commits": 17
+        }
+      },
+      {
+        "feature/branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 25,
+          "merge_commits": 12
+        }
+      },
+      {
+        "feature/branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 50,
+          "merge_commits": 25
+        }
+      },
+      {
+        "feature/branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 16
+        }
+      },
+      {
+        "feature/branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 16,
+          "merge_commits": 0
+        }
+      },
+      {
+        "feature/branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 22
+        }
+      },
+      {
+        "feature/branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 31,
+          "merge_commits": 14
+        }
+      },
+      {
+        "feature/branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 13,
+          "merge_commits": 4
+        }
+      },
+      {
+        "feature/branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 9,
+          "merge_commits": 0
+        }
+      },
+      {
+        "feature/branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 37,
+          "merge_commits": 17
+        }
+      },
+      {
+        "feature/branch_25": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 12,
+          "merge_commits": 3
+        }
+      },
+      {
+        "feature/branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 22
+        }
+      },
+      {
+        "feature/branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 20,
+          "merge_commits": 8
+        }
+      },
+      {
+        "feature/branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 49,
+          "merge_commits": 25
+        }
+      },
+      {
+        "feature/branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 41,
+          "merge_commits": 20
+        }
+      },
+      {
+        "feature/branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 21,
+          "merge_commits": 9
+        }
+      },
+      {
+        "feature/branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 11,
+          "merge_commits": 0
+        }
+      },
+      {
+        "feature/branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 23,
+          "merge_commits": 9
+        }
+      },
+      {
+        "hotfix/branch_26": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 13,
+          "merge_commits": 3
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 57,
+          "merge_commits": 31
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_07": {
+    "total_commits": 149,
+    "total_merge_commits": 49,
+    "total_branches": 19,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 46,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 62,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 48,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 57,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 62,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 13,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 39,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 60,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 16,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 31,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 41,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 6,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 57,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 47,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 34,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 20,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 15,
+          "merge_commits": 4
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 69,
+          "merge_commits": 33
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_08": {
+    "total_commits": 396,
+    "total_merge_commits": 54,
+    "total_branches": 11,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 18,
+          "merge_commits": 13
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 19,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 11,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 10,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 18,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 6,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 14,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 28,
+          "merge_commits": 6
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 66,
+          "merge_commits": 23
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_09": {
+    "total_commits": 109,
+    "total_merge_commits": 15,
+    "total_branches": 13,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 26,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 19,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 26,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 13,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 10,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 10,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 22,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 8,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 26,
+          "merge_commits": 4
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 8
+        }
+      },
+      {
+        "main-page": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 15,
+          "merge_commits": 3
+        }
+      },
+      {
+        "main-page-nav-footer": {
+          "has_been_integrated": true,
+          "parent_branch": "main-page",
+          "contributors": 2,
+          "commits": 2,
+          "merge_commits": 0
+        }
+      },
+      {
+        "responsiveness": {
+          "has_been_integrated": true,
+          "parent_branch": "main-page-nav-footer",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 5
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_10": {
+    "total_commits": 147,
+    "total_merge_commits": 37,
+    "total_branches": 27,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 14,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 14,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 16,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 13,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 19,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 20,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 50,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 14,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 9,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 26,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 41,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 18,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 18,
+          "merge_commits": 10
+        }
+      },
+      {
+        "fix/branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 9,
+          "merge_commits": 5
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 58,
+          "merge_commits": 27
+        }
+      },
+      {
+        "main-image-slider": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 23,
+          "merge_commits": 12
+        }
+      },
+      {
+        "my-profile": {
+          "has_been_integrated": true,
+          "parent_branch": "main-image-slider",
+          "contributors": 3,
+          "commits": 10,
+          "merge_commits": 6
+        }
+      },
+      {
+        "profile-diff-screens": {
+          "has_been_integrated": true,
+          "parent_branch": "my-profile",
+          "contributors": 3,
+          "commits": 50,
+          "merge_commits": 24
+        }
+      },
+      {
+        "search-bar": {
+          "has_been_integrated": true,
+          "parent_branch": "profile-diff-screens",
+          "contributors": 3,
+          "commits": 11,
+          "merge_commits": 6
+        }
+      },
+      {
+        "settings-pop-up": {
+          "has_been_integrated": true,
+          "parent_branch": "search-bar",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 18
+        }
+      },
+      {
+        "sign-in-sign-up-pages": {
+          "has_been_integrated": true,
+          "parent_branch": "settings-pop-up",
+          "contributors": 3,
+          "commits": 10,
+          "merge_commits": 6
+        }
+      },
+      {
+        "some-errorHandling": {
+          "has_been_integrated": true,
+          "parent_branch": "sign-in-sign-up-pages",
+          "contributors": 3,
+          "commits": 24,
+          "merge_commits": 12
+        }
+      },
+      {
+        "trailer": {
+          "has_been_integrated": true,
+          "parent_branch": "some-errorHandling",
+          "contributors": 3,
+          "commits": 24,
+          "merge_commits": 13
+        }
+      },
+      {
+        "user-reviews": {
+          "has_been_integrated": true,
+          "parent_branch": "trailer",
+          "contributors": 3,
+          "commits": 25,
+          "merge_commits": 14
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_11": {
+    "total_commits": 88,
+    "total_merge_commits": 27,
+    "total_branches": 9,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 16,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 21,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 10,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 28,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 18,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 13,
+          "merge_commits": 1
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 46,
+          "merge_commits": 14
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_12": {
+    "total_commits": 179,
+    "total_merge_commits": 41,
+    "total_branches": 6,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 35,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 7,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 26,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 27
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 27
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 93,
+          "merge_commits": 36
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_13": {
+    "total_commits": 141,
+    "total_merge_commits": 27,
+    "total_branches": 26,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 16,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 63,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 7,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 22,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 24,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 54,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 47,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 63,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 77,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 15,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 60,
+          "merge_commits": 16
+        }
+      },
+      {
+        "branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 48,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 49,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 52,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 61,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 8,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 10,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 10,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 14,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 30,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 19,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 9,
+          "merge_commits": 1
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 85,
+          "merge_commits": 22
+        }
+      },
+      {
+        "test/branch_25": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 76,
+          "merge_commits": 21
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_14": {
+    "total_commits": 205,
+    "total_merge_commits": 80,
+    "total_branches": 61,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 6,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 54,
+          "merge_commits": 50
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 18,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 55,
+          "merge_commits": 51
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 56,
+          "merge_commits": 52
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 54,
+          "merge_commits": 51
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 58,
+          "merge_commits": 54
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 12,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 24,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 25,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 30,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 45,
+          "merge_commits": 37
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 29,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 25,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 22,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 13,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 25,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_25": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 16,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_26": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 13,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_27": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 4,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_28": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 20,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_29": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 11,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 43,
+          "merge_commits": 39
+        }
+      },
+      {
+        "branch_30": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 14,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_31": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 13,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_32": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 5,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_33": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 22,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_34": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 23,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_35": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 25,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_36": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_37": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 27
+        }
+      },
+      {
+        "branch_38": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 28,
+          "merge_commits": 25
+        }
+      },
+      {
+        "branch_39": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 36,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 44,
+          "merge_commits": 40
+        }
+      },
+      {
+        "branch_40": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_41": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 6,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_42": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 34,
+          "merge_commits": 29
+        }
+      },
+      {
+        "branch_43": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 37,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_44": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 37,
+          "merge_commits": 32
+        }
+      },
+      {
+        "branch_45": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 38,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_46": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 30,
+          "merge_commits": 27
+        }
+      },
+      {
+        "branch_47": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 32,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_48": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 35,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_49": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 11,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 44,
+          "merge_commits": 40
+        }
+      },
+      {
+        "branch_50": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 38,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_51": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 54,
+          "merge_commits": 50
+        }
+      },
+      {
+        "branch_52": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 37,
+          "merge_commits": 33
+        }
+      },
+      {
+        "branch_53": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 40,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_54": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 42,
+          "merge_commits": 36
+        }
+      },
+      {
+        "branch_55": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 9,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_56": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 41,
+          "merge_commits": 37
+        }
+      },
+      {
+        "branch_57": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 44,
+          "merge_commits": 37
+        }
+      },
+      {
+        "branch_58": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 41,
+          "merge_commits": 36
+        }
+      },
+      {
+        "branch_59": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 44,
+          "merge_commits": 37
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 51,
+          "merge_commits": 47
+        }
+      },
+      {
+        "branch_60": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 60,
+          "merge_commits": 55
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 51,
+          "merge_commits": 47
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 52,
+          "merge_commits": 48
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 49
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 61,
+          "merge_commits": 55
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_15": {
+    "total_commits": 328,
+    "total_merge_commits": 60,
+    "total_branches": 10,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 74,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 74,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 89,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 73,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 58,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 81,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 52,
+          "merge_commits": 12
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 164,
+          "merge_commits": 29
+        }
+      },
+      {
+        "production": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 1,
+          "commits": 1,
+          "merge_commits": 0
+        }
+      },
+      {
+        "staging": {
+          "has_been_integrated": false,
+          "parent_branch": "production",
+          "contributors": 1,
+          "commits": 1,
+          "merge_commits": 0
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_16": {
+    "total_commits": 156,
+    "total_merge_commits": 43,
+    "total_branches": 21,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 7,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 22,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 44,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 36,
+          "merge_commits": 16
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 60,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 60,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 44,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 75,
+          "merge_commits": 25
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 63,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 14,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 15,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 50,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 67,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 6,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 47,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 52,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 5,
+          "merge_commits": 1
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 87,
+          "merge_commits": 28
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_17": {
+    "total_commits": 147,
+    "total_merge_commits": 23,
+    "total_branches": 16,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 7,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 61,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 30,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 46,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 25,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 63,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 53,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 49,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 53,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 25,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 35,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 16,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 29,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 50,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 24,
+          "merge_commits": 5
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 1,
+          "commits": 69,
+          "merge_commits": 11
+        }
+      }
+    ],
+    "total_contributors": 1
+  },
+  "repo_18": {
+    "total_commits": 283,
+    "total_merge_commits": 115,
+    "total_branches": 40,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 70,
+          "merge_commits": 44
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 22,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 67,
+          "merge_commits": 46
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 35,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 33,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 50,
+          "merge_commits": 33
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 27,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 66,
+          "merge_commits": 45
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 76,
+          "merge_commits": 54
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 29,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 9,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 33,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 13,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 56,
+          "merge_commits": 36
+        }
+      },
+      {
+        "branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 15,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 13,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_25": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 32,
+          "merge_commits": 16
+        }
+      },
+      {
+        "branch_26": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 34,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_27": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 67,
+          "merge_commits": 45
+        }
+      },
+      {
+        "branch_28": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 57,
+          "merge_commits": 40
+        }
+      },
+      {
+        "branch_29": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 36,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 8,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_30": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 28,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_31": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 26,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_32": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 28,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_33": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 11,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_34": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 39,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_35": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 40,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_36": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 38,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_37": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 35,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_38": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 21,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_39": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 70,
+          "merge_commits": 50
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 21,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 47,
+          "merge_commits": 31
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 10,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 35,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 11,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 66,
+          "merge_commits": 45
+        }
+      },
+      {
+        "fix/branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 59,
+          "merge_commits": 41
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 79,
+          "merge_commits": 56
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_19": {
+    "total_commits": 85,
+    "total_merge_commits": 13,
+    "total_branches": 6,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 63,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 39,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 58,
+          "merge_commits": 7
+        }
+      },
+      {
+        "feature/branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 38,
+          "merge_commits": 2
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 70,
+          "merge_commits": 9
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_20": {
+    "total_commits": 197,
+    "total_merge_commits": 37,
+    "total_branches": 22,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 76,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 35,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 25,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 65,
+          "merge_commits": 13
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 34,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 57,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 76,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 81,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 46,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 32,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 78,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 37,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 26,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 38,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 45,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 28,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 20,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 6
+        }
+      },
+      {
+        "fix/branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 7
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 77,
+          "merge_commits": 23
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_21": {
+    "total_commits": 368,
+    "total_merge_commits": 110,
+    "total_branches": 72,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 48,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 59,
+          "merge_commits": 46
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 67,
+          "merge_commits": 54
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 21,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 52,
+          "merge_commits": 39
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 67,
+          "merge_commits": 53
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 40,
+          "merge_commits": 29
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 65,
+          "merge_commits": 52
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 54,
+          "merge_commits": 43
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 69,
+          "merge_commits": 57
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 51,
+          "merge_commits": 35
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 21,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 54,
+          "merge_commits": 43
+        }
+      },
+      {
+        "branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 7,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 72,
+          "merge_commits": 56
+        }
+      },
+      {
+        "branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 57,
+          "merge_commits": 45
+        }
+      },
+      {
+        "branch_25": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 42
+        }
+      },
+      {
+        "branch_26": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 69,
+          "merge_commits": 56
+        }
+      },
+      {
+        "branch_27": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 8,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_28": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 11,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_29": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 77,
+          "merge_commits": 64
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 76,
+          "merge_commits": 62
+        }
+      },
+      {
+        "branch_30": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 68,
+          "merge_commits": 55
+        }
+      },
+      {
+        "branch_31": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 49,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_34": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 79,
+          "merge_commits": 64
+        }
+      },
+      {
+        "branch_35": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 78,
+          "merge_commits": 61
+        }
+      },
+      {
+        "branch_36": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 58,
+          "merge_commits": 45
+        }
+      },
+      {
+        "branch_38": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 49,
+          "merge_commits": 38
+        }
+      },
+      {
+        "branch_39": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 45,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 47,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_40": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 7,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_41": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 41,
+          "merge_commits": 27
+        }
+      },
+      {
+        "branch_42": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 34,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_43": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 61,
+          "merge_commits": 47
+        }
+      },
+      {
+        "branch_44": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 21,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_45": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_46": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_47": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 28,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_48": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 27,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_49": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 81,
+          "merge_commits": 55
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 8,
+          "merge_commits": 4
+        }
+      },
+      {
+        "branch_50": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 41,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_51": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 19,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_52": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 88,
+          "merge_commits": 67
+        }
+      },
+      {
+        "branch_53": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 83,
+          "merge_commits": 70
+        }
+      },
+      {
+        "branch_54": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 15,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_55": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 61,
+          "merge_commits": 47
+        }
+      },
+      {
+        "branch_56": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 4,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_57": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 22,
+          "merge_commits": 13
+        }
+      },
+      {
+        "branch_58": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 82,
+          "merge_commits": 68
+        }
+      },
+      {
+        "branch_59": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 29,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 4,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_60": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 46,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_61": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 50,
+          "merge_commits": 39
+        }
+      },
+      {
+        "branch_62": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 40,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_63": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 31
+        }
+      },
+      {
+        "branch_64": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 53,
+          "merge_commits": 39
+        }
+      },
+      {
+        "branch_65": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 46,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_66": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 47,
+          "merge_commits": 36
+        }
+      },
+      {
+        "branch_68": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 19,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_69": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 83,
+          "merge_commits": 66
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 2,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_70": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 46,
+          "merge_commits": 35
+        }
+      },
+      {
+        "branch_71": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 18,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 6,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 50,
+          "merge_commits": 39
+        }
+      },
+      {
+        "feature/branch_32": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 39,
+          "merge_commits": 25
+        }
+      },
+      {
+        "feature/branch_33": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 36,
+          "merge_commits": 26
+        }
+      },
+      {
+        "fix/branch_37": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 54,
+          "merge_commits": 43
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 85,
+          "merge_commits": 72
+        }
+      },
+      {
+        "test/branch_67": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 84,
+          "merge_commits": 71
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_22": {
+    "total_commits": 245,
+    "total_merge_commits": 46,
+    "total_branches": 12,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 28,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 56,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 62,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 66,
+          "merge_commits": 16
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 74,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 102,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 90,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 110,
+          "merge_commits": 32
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 80,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 71,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 73,
+          "merge_commits": 1
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 116,
+          "merge_commits": 35
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_23": {
+    "total_commits": 171,
+    "total_merge_commits": 28,
+    "total_branches": 13,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 6,
+          "commits": 30,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 7,
+          "commits": 46,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 7,
+          "commits": 95,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 7,
+          "commits": 109,
+          "merge_commits": 13
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 6,
+          "commits": 38,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 7,
+          "commits": 42,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 7,
+          "commits": 56,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 7,
+          "commits": 86,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 28,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 6,
+          "commits": 35,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 6,
+          "commits": 37,
+          "merge_commits": 5
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 6,
+          "commits": 42,
+          "merge_commits": 6
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 8,
+          "commits": 142,
+          "merge_commits": 21
+        }
+      }
+    ],
+    "total_contributors": 9
+  },
+  "repo_24": {
+    "total_commits": 192,
+    "total_merge_commits": 34,
+    "total_branches": 16,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 16,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 58,
+          "merge_commits": 20
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 15,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 54,
+          "merge_commits": 16
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 48,
+          "merge_commits": 15
+        }
+      },
+      {
+        "feature/branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 8,
+          "merge_commits": 3
+        }
+      },
+      {
+        "feature/branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 4,
+          "merge_commits": 1
+        }
+      },
+      {
+        "feature/branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 8,
+          "merge_commits": 2
+        }
+      },
+      {
+        "feature/branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 11,
+          "merge_commits": 4
+        }
+      },
+      {
+        "feature/branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 55,
+          "merge_commits": 17
+        }
+      },
+      {
+        "feature/branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 40,
+          "merge_commits": 13
+        }
+      },
+      {
+        "feature/branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 51,
+          "merge_commits": 18
+        }
+      },
+      {
+        "feature/branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 7,
+          "merge_commits": 3
+        }
+      },
+      {
+        "feature/branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 52,
+          "merge_commits": 13
+        }
+      },
+      {
+        "fix/branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 45,
+          "merge_commits": 14
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 64,
+          "merge_commits": 22
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_25": {
+    "total_commits": 227,
+    "total_merge_commits": 67,
+    "total_branches": 5,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 14,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 33,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 39,
+          "merge_commits": 22
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 2,
+          "commits": 10,
+          "merge_commits": 5
+        }
+      },
+      {
+        "production": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 59,
+          "merge_commits": 36
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_26": {
+    "total_commits": 202,
+    "total_merge_commits": 54,
+    "total_branches": 26,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 44,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 28,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 49,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 10,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 74,
+          "merge_commits": 26
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 55,
+          "merge_commits": 24
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 45,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 63,
+          "merge_commits": 32
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 55,
+          "merge_commits": 27
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 40,
+          "merge_commits": 15
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 53,
+          "merge_commits": 22
+        }
+      },
+      {
+        "branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 6,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 21,
+          "merge_commits": 6
+        }
+      },
+      {
+        "branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 51,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 87,
+          "merge_commits": 41
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 61,
+          "merge_commits": 32
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 60,
+          "merge_commits": 32
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 70,
+          "merge_commits": 40
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 60,
+          "merge_commits": 30
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 72,
+          "merge_commits": 41
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 87,
+          "merge_commits": 45
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 32,
+          "merge_commits": 11
+        }
+      },
+      {
+        "fix/branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 68,
+          "merge_commits": 36
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": true,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 82,
+          "merge_commits": 51
+        }
+      },
+      {
+        "production": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 7,
+          "merge_commits": 2
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_27": {
+    "total_commits": 213,
+    "total_merge_commits": 49,
+    "total_branches": 46,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 15,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 26,
+          "merge_commits": 18
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 20,
+          "merge_commits": 13
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 43,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 34,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 45,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 12,
+          "merge_commits": 7
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 22,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_27": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 6,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_28": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 32,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_29": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 13,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 16,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_30": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 12,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_31": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 20,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_32": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 48,
+          "merge_commits": 37
+        }
+      },
+      {
+        "branch_33": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 8,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_34": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 20,
+          "merge_commits": 13
+        }
+      },
+      {
+        "branch_35": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 28,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_36": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 38,
+          "merge_commits": 32
+        }
+      },
+      {
+        "branch_37": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 42,
+          "merge_commits": 23
+        }
+      },
+      {
+        "branch_38": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 44,
+          "merge_commits": 34
+        }
+      },
+      {
+        "branch_39": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 47,
+          "merge_commits": 36
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 14,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_40": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 42,
+          "merge_commits": 33
+        }
+      },
+      {
+        "branch_41": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 35,
+          "merge_commits": 29
+        }
+      },
+      {
+        "branch_42": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 14,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_43": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 31,
+          "merge_commits": 25
+        }
+      },
+      {
+        "branch_44": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 15,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_45": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 34,
+          "merge_commits": 28
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 21,
+          "merge_commits": 16
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 26,
+          "merge_commits": 19
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 29,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 6,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 43,
+          "merge_commits": 34
+        }
+      },
+      {
+        "feature/branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 2,
+          "merge_commits": 0
+        }
+      },
+      {
+        "feature/branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 6,
+          "merge_commits": 2
+        }
+      },
+      {
+        "fix/branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 39,
+          "merge_commits": 32
+        }
+      },
+      {
+        "fix/branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 41,
+          "merge_commits": 32
+        }
+      },
+      {
+        "fix/branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 35,
+          "merge_commits": 14
+        }
+      },
+      {
+        "fix/branch_21": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 46,
+          "merge_commits": 35
+        }
+      },
+      {
+        "fix/branch_22": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 53,
+          "merge_commits": 21
+        }
+      },
+      {
+        "fix/branch_23": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 17,
+          "merge_commits": 12
+        }
+      },
+      {
+        "fix/branch_24": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 36,
+          "merge_commits": 28
+        }
+      },
+      {
+        "fix/branch_25": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 34,
+          "merge_commits": 23
+        }
+      },
+      {
+        "fix/branch_26": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 42,
+          "merge_commits": 32
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 48,
+          "merge_commits": 38
+        }
+      }
+    ],
+    "total_contributors": 4
+  },
+  "repo_28": {
+    "total_commits": 133,
+    "total_merge_commits": 36,
+    "total_branches": 11,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 46,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 16,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 22,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 20,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 46,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 26,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 18,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 38,
+          "merge_commits": 11
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 11,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_9": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 3,
+          "merge_commits": 0
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 42,
+          "merge_commits": 13
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_29": {
+    "total_commits": 151,
+    "total_merge_commits": 24,
+    "total_branches": 21,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 8,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_11": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 31,
+          "merge_commits": 17
+        }
+      },
+      {
+        "branch_12": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 18,
+          "merge_commits": 12
+        }
+      },
+      {
+        "branch_13": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 7,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_14": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 37,
+          "merge_commits": 14
+        }
+      },
+      {
+        "branch_15": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 21,
+          "merge_commits": 16
+        }
+      },
+      {
+        "branch_16": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 8,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_17": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 9,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_18": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 23,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_19": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 7,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 8,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_20": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 19,
+          "merge_commits": 13
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 7,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 43,
+          "merge_commits": 21
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 16,
+          "merge_commits": 9
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 13,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 8,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 17,
+          "merge_commits": 15
+        }
+      },
+      {
+        "fix/branch_10": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 15,
+          "merge_commits": 11
+        }
+      },
+      {
+        "fix/branch_9": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 36,
+          "merge_commits": 19
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 3,
+          "commits": 45,
+          "merge_commits": 22
+        }
+      }
+    ],
+    "total_contributors": 3
+  },
+  "repo_30": {
+    "total_commits": 144,
+    "total_merge_commits": 25,
+    "total_branches": 9,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 18,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 4,
+          "commits": 23,
+          "merge_commits": 10
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 16,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 12,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 23,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 26,
+          "merge_commits": 3
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 20,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_8": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 42,
+          "merge_commits": 4
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 4,
+          "commits": 38,
+          "merge_commits": 17
+        }
+      }
+    ],
+    "total_contributors": 5
+  },
+  "repo_31": {
+    "total_commits": 99,
+    "total_merge_commits": 28,
+    "total_branches": 8,
+    "branches": [
+      {
+        "branch_1": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 48,
+          "merge_commits": 8
+        }
+      },
+      {
+        "branch_2": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 25,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_3": {
+          "has_been_integrated": false,
+          "parent_branch": "main",
+          "contributors": 3,
+          "commits": 23,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_4": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 1,
+          "commits": 1,
+          "merge_commits": 0
+        }
+      },
+      {
+        "branch_5": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 29,
+          "merge_commits": 2
+        }
+      },
+      {
+        "branch_6": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 31,
+          "merge_commits": 1
+        }
+      },
+      {
+        "branch_7": {
+          "has_been_integrated": true,
+          "parent_branch": "main",
+          "contributors": 2,
+          "commits": 31,
+          "merge_commits": 5
+        }
+      },
+      {
+        "main": {
+          "has_been_integrated": false,
+          "parent_branch": "none",
+          "contributors": 2,
+          "commits": 36,
+          "merge_commits": 8
+        }
+      }
+    ],
+    "total_contributors": 3
+  }
+}

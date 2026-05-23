@@ -5,6 +5,7 @@ import json
 from commit import CommitNode
 from branch import Branch
 from contributor import Contributor
+from branch_tree import BranchTree
 
 UNKNOWN = "unknown"
 
@@ -18,8 +19,11 @@ class RepoAnalyzer:
         contributors = self.create_contributors(repo, commits)
         branches = self.create_branches(repo, commits)
 
-        # self.assign_parent_branches(repo, branches)
-        # self.populate_branches(repo, branches, commits, contributors)
+        self.populate_branches(repo, branches, commits, contributors)
+
+        trees = self.create_branch_trees(branches)
+        for tree in trees:
+            tree.print_tree()
 
         return {
             "total_commits": len(commits),
@@ -30,7 +34,7 @@ class RepoAnalyzer:
             ),
             "total_branches": len(branches),
             # "branch_names": [branch.name for branch in branches.values()],
-            # "branches": [branch.to_dict() for branch in branches.values()],
+            "branches": [branch.to_dict() for branch in branches.values()],
             "total_contributors": len(contributors),
             # "contributors": [contributor.email for contributor in contributors.values()]
         }
@@ -70,91 +74,59 @@ class RepoAnalyzer:
             branches[branch.name] = Branch(branch.name, commit_nodes[branch_tip.hexsha])
         return branches
 
-    def assign_parent_branches(self, repo: Repo, branches: dict[str, Branch], root: str = "main") -> None:
-        # Iterate over each branch
-        for branch in branches.values():
-            if branch.name == root:
+    def assign_parent_branch(self, child: Branch, parents: dict[str, Branch], merge_base: CommitNode) -> None:
+        for parent in parents.values():
+            if parent == child:
                 continue
-
-            # Parent branch candidates
-            candidates = []
-
-            # Iterate over all the possible parent branches
-            for parent_branch in branches.values():
-                if parent_branch == branch:
-                    continue
-
-                # Find merge base between current branch and current parent branch
-                merge_bases = repo.merge_base(parent_branch.name, branch.name)
-
-                # If no merge base exists cant be parent, on to next possible parent branch
-                if not merge_bases:
-                    continue
-
-                # Merge base
-                base = merge_bases[0]
-
-                # Number of commits on current branch not reachable from merge base
-                dist = sum(1 for _ in repo.iter_commits(f"{base.hexsha}..{branch.name}"))
-
-                # First parent penalty
-                fp_penalty = 1
-                for commit in repo.iter_commits(parent_branch.name, first_parent=True):
-                    if commit.hexsha == base.hexsha:
-                        fp_penalty = 0
-                        break
-
-                # Root penalty (prefer main as parent if multiple parent branches equally good)
-                root_penalty = 1
-                if parent_branch.name == root:
-                    root_penalty = 0
-
-                candidates.append((dist, fp_penalty, root_penalty, parent_branch))
-
-            if candidates:
-                # 1. Prioritize lowest distance
-                # 2. If distance equal prioritize parent with no first parent penalty
-                # 3. If all else equal choose root (main)
-                candidates.sort(key=lambda item: (item[0], item[1], item[2]))
-                for i in range(len(candidates)):
-                    best_parent = candidates[i][3]
-                    if len(candidates) > 1:
-                        if best_parent.parent_branch and best_parent.parent_branch == branch:
-                            pass
-                    else:
-                        if best_parent.parent_branch:
-                            pass
-                        break
-
-                branch.parent_branch = best_parent
+            if merge_base.hexsha in parent.commits:
+                child.add_parent(parent)
+                parent.add_child(child)
+                return
 
     def populate_branches(self,
                           repo: Repo,
                           branches: dict[str, Branch],
                           commits: dict[str, CommitNode],
-                          contributors: dict[str, Contributor]) -> None:
+                          contributors: dict[str, Contributor],
+                          root: str = "main") -> None:
+        # Used as merge bases
+        assigned_nodes = {}
 
+        # Assign to main first
+        if root in branches:
+            mainline = branches[root]
+            for commit in repo.iter_commits(root, first_parent=True):
+                mainline.add_commit(commits[commit.hexsha])
+                mainline.add_contributor(contributors[commit.author.email or UNKNOWN])
+                assigned_nodes[commit.hexsha] = commit
+
+        # Assign to feature branches
         for branch in branches.values():
+            if branch.name == root:  # Already populated
+                continue
 
-            # Mainline
-            if branch.parent_branch is None:
-                for commit in repo.iter_commits(branch.name, first_parent=True):
-                    branch.add_commit(commits[commit.hexsha])
-                    branch.add_contributor(contributors[commits[commit.hexsha].author_email])
+            # Traverse branch, first parent only
+            for commit in repo.iter_commits(branch.name, first_parent=True):
+                if commit.hexsha in assigned_nodes:  # Merge base reached
+                    # Assign parent and stop adding commits to branch
+                    self.assign_parent_branch(branch, branches, commits[commit.hexsha])
+                    break
 
-            # Feature branches
-            else:
-                parent_first_parent_commits = {
-                    commit.hexsha
-                    for commit in repo.iter_commits(branch.parent_branch.name, first_parent=True)
-                }
+                # Add commit and contributor to branch
+                branch.add_commit(commits[commit.hexsha])
+                branch.add_contributor(contributors[commit.author.email or UNKNOWN])
+                assigned_nodes[commit.hexsha] = commit
 
-                for commit in repo.iter_commits(branch.name, first_parent=True):
-                    if commit.hexsha not in parent_first_parent_commits:
-                        branch.add_commit(commits[commit.hexsha])
-                        branch.add_contributor(contributors[commits[commit.hexsha].author_email])
+    def create_branch_trees(self, branches: dict[str, Branch]) -> list[BranchTree]:
+        trees = []
+        for branch in branches.values():
+            if not branch.children:
+                tree = BranchTree(branch)
+                trees.append(tree)
+        return trees
 
 
-# analyzer = RepoAnalyzer()
-# result = analyzer.analyze_repo(os.path.join("repos", "anon4"))
+analyzer = RepoAnalyzer()
+result = analyzer.analyze_repo(os.path.join("repos/anon", "repo_09"))
+# trees = analyzer.create_branch_trees(self, )
 # print(json.dumps(result, indent=4))

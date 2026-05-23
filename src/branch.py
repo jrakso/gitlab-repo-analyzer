@@ -13,6 +13,7 @@ class Branch:
     name: str
     branch_tip: CommitNode
     parent_branch: Branch | None
+    child_branches: dict[str, Branch]
     commits: dict[str, CommitNode]
     merge_commits: dict[str, CommitNode]
     contributors: dict[str, Contributor]
@@ -20,7 +21,8 @@ class Branch:
     def __init__(self, name: str, branch_tip: CommitNode) -> None:
         self.name = name
         self.branch_tip = branch_tip
-        self.parent_branch = None
+        self.parent = None
+        self.children = {}
         self.commits = {}
         self.merge_commits = {}
         self.contributors = {}
@@ -34,6 +36,14 @@ class Branch:
     def add_contributor(self, contributor: Contributor) -> None:
         if contributor.email not in self.contributors:
             self.contributors[contributor.email] = contributor
+
+    def add_parent(self, parent: Branch) -> None:
+        if not self.parent:
+            self.parent = parent
+
+    def add_child(self, child: Branch) -> None:
+        if child.name not in self.children:
+            self.children[child.name] = child
 
     def get_number_of_commits(self) -> int:
         return len(self.commits)
@@ -81,18 +91,15 @@ class Branch:
         # start_date = self.get_start_date()
         # end_date = self.get_end_date()
         # lifetime = self.get_lifetime()
-        # parent = "unknown"
-        # if self.parent_branch:
-        #     parent = self.parent_branch.name
+        parent = "none"
+        if self.parent:
+            parent = self.parent.name
         return {
             self.name: {
                 "has_been_integrated": self.has_been_integrated(),
-                "contributors": [
-                    {
-                        "name": contributor.name,
-                        "email": contributor.email,
-                    }
-                    for contributor in self.contributors.values()
-                ]
+                "parent_branch": parent,
+                "contributors": self.get_number_of_contributors(),
+                "commits": self.get_number_of_commits(),
+                "merge_commits": self.get_number_of_merge_commits()
             }
         }
