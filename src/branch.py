@@ -84,22 +84,20 @@ class Branch:
             return None
         return end_date - start_date
 
-    def has_been_integrated(self) -> bool:
-        return bool(self.branch_tip.children)
+    def get_lifetime_in_minutes(self) -> float | None:
+        lifetime = self.get_lifetime()
+        if lifetime is None:
+            return None
+        return lifetime.total_seconds() / 60
 
-    def to_dict(self):
-        # start_date = self.get_start_date()
-        # end_date = self.get_end_date()
-        # lifetime = self.get_lifetime()
-        parent = "none"
-        if self.parent:
-            parent = self.parent.name
-        return {
-            self.name: {
-                "has_been_integrated": self.has_been_integrated(),
-                "parent_branch": parent,
-                "contributors": self.get_number_of_contributors(),
-                "commits": self.get_number_of_commits(),
-                "merge_commits": self.get_number_of_merge_commits()
-            }
-        }
+    def get_lifetime_in_hours(self) -> float | None:
+        lifetime = self.get_lifetime()
+        if lifetime is None:
+            return None
+        return lifetime.total_seconds() / 3600
+
+    def get_lifetime_in_days(self) -> float | None:
+        lifetime = self.get_lifetime()
+        if lifetime is None:
+            return None
+        return lifetime.total_seconds() / 86400
