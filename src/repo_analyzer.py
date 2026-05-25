@@ -131,7 +131,10 @@ class RepoAnalyzer:
                     return True
         return False
 
-    def is_directly_merged_to_other_branch(self, branch: Branch, branches: dict[str, Branch], main_branch: Branch | None) -> bool:
+    def is_directly_merged_to_other_branch(self,
+                                           branch: Branch,
+                                           branches: dict[str, Branch],
+                                           main_branch: Branch | None) -> bool:
         for other_branch in branches.values():
             if other_branch is main_branch or other_branch is branch:
                 continue
@@ -291,7 +294,7 @@ class RepoAnalyzer:
             "total_commits": total_commits,
             "total_regular_commits": total_regular_commits,
             "total_merge_commits": total_merge_commits,
-            "merge_commit_ratio": (
+            "total_merge_commit_ratio": (
                 total_merge_commits / total_commits
                 if total_commits > 0
                 else 0
@@ -321,6 +324,12 @@ class RepoAnalyzer:
                 and total_commits > 0
                 else None
             ),
+            "main_branch_merge_commits_share_of_total": (
+                merge_commits_on_main_branch / total_merge_commits
+                if merge_commits_on_main_branch is not None
+                and total_merge_commits > 0
+                else None
+            ),
 
             # Branch metrics.
             # Here, "branch" means non-main/default branch.
@@ -338,12 +347,16 @@ class RepoAnalyzer:
             "regular_commits_on_branches": regular_commits_on_branches,
             "merge_commits_on_branches": merge_commits_on_branches,
 
-            "branch_commit_ratio": (
+            "branches_merge_commits_share_of_total": (
+                merge_commits_on_branches / total_merge_commits if total_merge_commits > 0 else 0
+            ),
+
+            "branches_commits_share_of_total": (
                 commits_on_branches / total_commits
                 if total_commits > 0
                 else 0
             ),
-            "branch_regular_commit_ratio": (
+            "branches_regular_commits_share_of_total": (
                 regular_commits_on_branches / total_regular_commits
                 if total_regular_commits > 0
                 else 0
