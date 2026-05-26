@@ -22,13 +22,6 @@ class RepoAnalyzer:
 
         self.populate_branches(repo, branches, commits, contributors, self.get_main_branch_name(branches))
 
-        for branch in branches.values():
-            print(f"-------------- {branch.name} ------------------")
-            print(f"parent: {branch.parent.name if branch.parent else "none"}")
-        trees = self.create_branch_trees(branches)
-        for tree in trees:
-            tree.print_tree()
-
         repo_name = os.path.basename(repo_path)
         return self.get_results(repo, repo_name, branches, commits, contributors, self.get_main_branch_name(branches))
 
@@ -299,6 +292,11 @@ class RepoAnalyzer:
                 if total_commits > 0
                 else 0
             ),
+            "total_regular_commit_ratio": (
+                total_regular_commits / total_commits
+                if total_commits > 0
+                else 0
+            ),
 
             "total_contributors": total_contributors,
 
@@ -318,10 +316,23 @@ class RepoAnalyzer:
                 and commits_on_main_branch > 0
                 else None
             ),
-            "main_branch_regular_commits_share_of_total": (
-                regular_commits_on_main_branch / total_commits
-                if regular_commits_on_main_branch is not None
+            "main_branch_merge_commit_ratio": (
+                merge_commits_on_main_branch / commits_on_main_branch
+                if merge_commits_on_main_branch is not None
+                and commits_on_main_branch is not None
+                and commits_on_main_branch > 0
+                else None
+            ),
+            "main_branch_commits_share_of_total": (
+                commits_on_main_branch / total_commits
+                if commits_on_main_branch is not None
                 and total_commits > 0
+                else None
+            ),
+            "main_branch_regular_commits_share_of_total": (
+                regular_commits_on_main_branch / total_regular_commits
+                if regular_commits_on_main_branch is not None
+                and total_regular_commits > 0
                 else None
             ),
             "main_branch_merge_commits_share_of_total": (
@@ -350,7 +361,6 @@ class RepoAnalyzer:
             "branches_merge_commits_share_of_total": (
                 merge_commits_on_branches / total_merge_commits if total_merge_commits > 0 else 0
             ),
-
             "branches_commits_share_of_total": (
                 commits_on_branches / total_commits
                 if total_commits > 0
@@ -439,7 +449,7 @@ class RepoAnalyzer:
         }
 
 
-analyzer = RepoAnalyzer()
-result = analyzer.analyze_repo(os.path.join("repos/anon", "repo_09"))
+# analyzer = RepoAnalyzer()
+# result = analyzer.analyze_repo(os.path.join("repos/anon", "repo_09"))
 # trees = analyzer.create_branch_trees(self, )
-print(json.dumps(result, indent=4))
+# print(json.dumps(result, indent=4))
