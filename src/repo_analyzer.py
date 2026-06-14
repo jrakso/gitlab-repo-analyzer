@@ -1,7 +1,6 @@
 from typing import Any
 from git import Repo
 import os
-import json
 from commit import CommitNode
 from branch import Branch
 from contributor import Contributor
